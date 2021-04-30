@@ -1,22 +1,20 @@
-import Ionicon from "./ionicon";
+import IoniconEDiv from "./ioniconEDiv";
 import Story from "./story";
 
 export default function Stories (){
+  const ion = ["9gag",
+              "meowed",
+              "barked",
+              "nathanwpylestrangeplanet",
+              "wawawicomics",
+              "respondeai",
+              "filomoderna",
+              "memeriagourmet"]
     return (
         <div class="stories">
-            <Story usuario = "9gag"/>
-            <Story usuario = "meowed"/>
-            <Story usuario = "barked"/>
-            <Story usuario = "nathanwpylestrangeplanet"/>
-            <Story usuario = "wawawicomics"/>
-            <Story usuario = "respondeai"/>
-            <Story usuario = "filomoderna"/>
-            <Story usuario = "memeriagourmet"/>
+          {ion.map(i=><Story usuario = {i}/>)}
 
-
-        <div class="setinha">
-          <Ionicon nome = "chevron-forward-circle"/>
-        </div>
+          <IoniconEDiv nome = "chevron-forward-circle" classe = "setinha"/>
       </div>
     )
 }

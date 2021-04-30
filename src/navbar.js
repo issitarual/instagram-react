@@ -1,4 +1,5 @@
 import Ionicon from "./ionicon";
+import IoniconEDiv from "./ioniconEDiv";
 
 export default function Navbar(){
     const ionIcon = {
@@ -15,9 +16,7 @@ export default function Navbar(){
             <img src="assets/img/logo.png" />
           </div>
 
-          <div class="logo-mobile">
-            <Ionicon nome = {ionIcon.logoMobile} />
-          </div>
+          <IoniconEDiv classe = "logo-mobile" nome = {ionIcon.logoMobile}/>
 
           <div class="instagram-mobile">
             <img src="assets/img/logo.png" />
@@ -31,9 +30,8 @@ export default function Navbar(){
               {ionIcon.icones.map(n => <Ionicon nome = {n}/>)}
           </div>
 
-          <div class="icones-mobile">
-            <Ionicon nome = {ionIcon.iconesMobile} />
-          </div>
+          <IoniconEDiv classe = "icones-mobile" nome = {ionIcon.iconesMobile}/>
+
         </div>
       </div>
     );

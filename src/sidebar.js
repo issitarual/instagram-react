@@ -2,6 +2,11 @@ import Sugestao from "./sugestao"
 import Usuario from "./usuario"
 
 export default function Sidebar() {
+  const sugestao = [{usuario: "bad.vibes.memes", razao: "Segue você"},
+  {usuario: "chibirdart", razao: "Segue você"},
+  {usuario: "razoesparaacreditar", razao: "Novo no Instagram"},
+  {usuario: "adorable_animals", razao: "Segue você"},
+  {usuario: "smallcutecats", razao: "Segue você"}]
     return(
         
         <div class="sidebar">
@@ -12,12 +17,7 @@ export default function Sidebar() {
               Sugestões para você
               <div>Ver tudo</div>
             </div>
-
-            <Sugestao usuario="bad.vibes.memes" razao="Segue você"/>
-            <Sugestao usuario="chibirdart" razao="Segue você"/>
-            <Sugestao usuario="razoesparaacreditar" razao="Novo no Instagram"/>
-            <Sugestao usuario="adorable_animals" razao="Segue você"/>
-            <Sugestao usuario="smallcutecats" razao="Segue você"/>
+            {sugestao.map(s=><Sugestao usuario={s.usuario} razao={s.razao}/>)}
 
           <div class="links">
             Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos • Localizações • Contas mais relevantes • Hashtags • Idioma

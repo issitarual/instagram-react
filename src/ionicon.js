@@ -3,3 +3,4 @@ export default function Ionicon(props){
         <ion-icon name={props.nome}></ion-icon>
     )
 }
+

@@ -1,4 +1,5 @@
 import Ionicon from "./ionicon";
+import IoniconEDiv from "./ioniconEDiv";
 
 export default function Post (props) {
     const ionicon = {
@@ -15,9 +16,7 @@ export default function Post (props) {
             <img src={srcUsuario}/>
             {props.usuario}
           </div>
-          <div class="acoes">
-            <Ionicon nome={ionicon.acoesTopo}/>
-          </div>
+          <IoniconEDiv classe="acoes" nome={ionicon.acoesTopo}/>
         </div>
 
         <div class="conteudo">
@@ -29,9 +28,7 @@ export default function Post (props) {
             <div>
               {ionicon.acoesTriplo.map(n => <Ionicon nome = {n}/>)}
             </div>
-            <div>
-              <Ionicon nome = {ionicon.acoesBaixo}/>
-            </div>
+            <IoniconEDiv classe = "" nome = {ionicon.acoesBaixo}/>
           </div>
 
           <div class="curtidas">
