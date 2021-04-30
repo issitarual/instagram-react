@@ -1,3 +1,5 @@
+import Ionicon from "./ionicon";
+
 export default function FundoMobile (){
     const ionIconName = [
         "home",
@@ -7,6 +9,6 @@ export default function FundoMobile (){
         "person-outline"];
     return (
     <div class="fundo-mobile">
-        {ionIconName.map(name => <ion-icon name={name}></ion-icon>)}
+        {ionIconName.map(name => <Ionicon nome={name}/>)}
     </div>);
 }
